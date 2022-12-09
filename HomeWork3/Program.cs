@@ -40,6 +40,26 @@ Console.Write("Number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 Polin(number);*/
 
+/*bool Polin(int num) // ЧЕРЕЗ BOOL (для тренировки)
+{
+    int newsum = num;
+    int sum = 0;
+    while(num > 0)
+    {
+        int ost = num % 10;
+        sum = sum * 10 + ost;
+        num = num / 10;
+    }
+    if(newsum == sum)
+        return true;
+    else 
+        return false;
+}
+Console.Write("Number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+bool polinnum = Polin(number);
+Console.WriteLine(polinnum);*/
+
 
 /*// Задача 2
 // Программа, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
