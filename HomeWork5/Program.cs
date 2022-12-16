@@ -99,10 +99,11 @@ Console.WriteLine("sum of elements at odd indices in an array " + result);*/
 
 double[] CreatedRandomArray(int size, int minValue, int maxValue)
  {
+    Random rnd = new Random();
     double[] nums = new double[size];
 
     for(int i = 0; i < size; i++)
-        nums[i] = new Random().Next(minValue, maxValue + 1);
+        nums[i] = rnd.NextDouble() + rnd.Next(minValue, maxValue + 1);
     
     return nums;
  }
