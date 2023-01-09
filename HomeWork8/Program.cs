@@ -214,7 +214,7 @@ else ErrorMatrix();*/
 
 
 
-/*// Задача 4
+// Задача 4
 // Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 
 int[,,] CreateRandom3dArray()
@@ -238,7 +238,6 @@ int[,,] CreateRandom3dArray()
         current = nums[i];
 
         if (i >= 1)
-        {
             for (int j = 0; j < i; j++)
             {
                 while (nums[i] == nums[j])
@@ -248,7 +247,6 @@ int[,,] CreateRandom3dArray()
                 }
                 current = nums[i];
             }
-        }
     }
 
     int[,,] array = new int[x, y, z];
@@ -282,7 +280,7 @@ void Show3dArray(int[,,] array)
 
 
 int[,,] myArray = CreateRandom3dArray();
-Show3dArray(myArray);*/
+Show3dArray(myArray);
 
 
 
